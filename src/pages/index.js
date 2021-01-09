@@ -1,8 +1,7 @@
 import React from "react"
 import { Row, Col, Container, ListGroup } from "react-bootstrap"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Layout, SEO } from "../components"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>

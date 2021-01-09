@@ -10,8 +10,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"
 
-import Header from "./header"
-import Navbar from "./navBar"
+import Header from "../Header"
+import Navbar from "../Navbar"
 
 const Layout = ({ children, pageInfo }) => (
   <StaticQuery
