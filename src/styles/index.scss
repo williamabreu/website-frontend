@@ -1,8 +1,11 @@
+// Custom global variables
+@import "./variables";
+
+// Custom global CSS
+@import "./styles";
+
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
-// Custom variables
-@import "./variables";
 
 // Component styles
 @import "../components/Layout/style";
