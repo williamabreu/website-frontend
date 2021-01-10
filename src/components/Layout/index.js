@@ -10,10 +10,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"
 
-import Header from "../Header"
-import Navbar from "../Navbar"
-
-const Layout = ({ children, pageInfo }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,13 +23,7 @@ const Layout = ({ children, pageInfo }) => (
     `}
     render={data => (
       <>
-        <Container fluid className="px-0 main">
-          <Row noGutters className="justify-content-center">
-            <Col>
-              <Header siteTitle={data.site.siteMetadata.title} />
-            </Col>
-          </Row>
-          <Navbar pageInfo={pageInfo} />
+        <Container fluid className="px-0 main d-flex align-items-center justify-content-center">
           <Row noGutters>
             <Col>
               <Container className="mt-5">
@@ -46,9 +37,7 @@ const Layout = ({ children, pageInfo }) => (
             <Col className="footer-col">
               <footer>
                 <span>
-                  © {new Date().getFullYear()}, Built with
-                  {` `}
-                  <a href="https://www.gatsbyjs.org">Gatsby</a>
+                  Developed by {" "} <a href="https://www.williamabreu.net">williamabreu.net</a>
                 </span>
               </footer>
             </Col>

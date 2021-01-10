@@ -1,65 +1,28 @@
 import React from "react"
 import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { FaGithub, FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa"
 
-import { Layout, SEO } from "../components"
+import { BusinessCard, Layout, SEO } from "../components"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO
+      title="Home"
+      keywords={[`william`, `abreu`, `software`, `developer`]}
+    />
     <Container className="text-center">
       <Row>
         <Col>
-          <p>
-            This is a Gatsby Starter that I frequently use to get jump started
-            on quick website builds. It includes the following packages:
-          </p>
-        </Col>
-      </Row>
-      <Row className="justify-content-center my-3">
-        <Col md="6">
-          <ListGroup>
-            <ListGroup.Item
-              action
-              href="https://getbootstrap.com"
-              target="_blank"
-            >
-              Bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-bootstrap.github.io/"
-              target="_blank"
-            >
-              react-bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-icons.netlify.com"
-              target="_blank"
-            >
-              react-icons
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/"
-              target="_blank"
-            >
-              gatsby-plugin-sass
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>
-            This starter also includes a navbar that sticks to the top of the
-            screen when the user scrolls past it, and a footer that stays at the
-            bottom of the screen.
-          </p>
-          <p>
-            For more documentation on these packages and how they work, please
-            refer to the pages linked in the list above.
-          </p>
+          <BusinessCard
+            name="William Abreu"
+            description="Software Developer"
+            socialNetworks={[
+              { name: "GitHub",    icon: <FaGithub/>,    link: "https://github.com/williamabreu" },
+              { name: "LinkedIn",  icon: <FaLinkedin/>,  link: "https://linkedin.com/in/williamsantosabreu" },
+              { name: "YouTube",   icon: <FaYoutube/>,   link: "https://youtube.com/williamabreu" },
+              { name: "Instagram", icon: <FaInstagram/>, link: "https://instagram.com/williamsantosabreu" },
+            ]}
+          />
         </Col>
       </Row>
     </Container>

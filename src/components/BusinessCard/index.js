@@ -2,7 +2,7 @@ import React from "react"
 import { Button, ButtonGroup, Col, Container, Row } from "react-bootstrap"
 
 const BusinessCard = (props) => (
-  <Container className="business-card py-5">
+  <Container className="business-card p-5 my-5">
     <Row>
       <Col>
         <h1>{props.name}</h1>
