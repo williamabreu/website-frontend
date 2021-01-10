@@ -1,12 +1,23 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/gatsby-config/
+ */
+
 module.exports = {
+
   pathPrefix: "/gatsby-react-bootstrap-starter",
+
   siteMetadata: {
     title: `Gatsby React Bootstrap Starter`,
     description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
     author: `Billy Jacoby`,
   },
+
   plugins: [
+
     `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,9 +25,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-plugin-sass`,
+
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,8 +44,10 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+
+    /* This (optional) plugin enables Progressive Web App + Offline functionality. To learn more, visit: https://gatsby.dev/offline */
     // `gatsby-plugin-offline`,
+
   ],
+
 }
