@@ -1,6 +1,9 @@
+// Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Custom variables
 @import "./variables";
 
-@import "../components/Layout/style.scss";
-@import "../components/Navbar/style.scss";
+// Component styles
+@import "../components/Layout/style";
+@import "../components/Navbar/style";
