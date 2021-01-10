@@ -26,6 +26,15 @@ module.exports = {
       },
     },
 
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Raleway', 'Source Sans Pro'],
+        }
+      }
+    },
+
     `gatsby-plugin-sass`,
 
     `gatsby-transformer-sharp`,
