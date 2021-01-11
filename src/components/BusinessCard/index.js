@@ -30,7 +30,7 @@ const BusinessCard = (props) => (
     {props.socialNetworks &&
       <ButtonGroup>
         {props.socialNetworks.map(item => (
-          <Button variant="outline-dark" href={item.link} >
+          <Button variant="outline-dark" href={item.link} target="_blank" >
             {item.icon}
           </Button>
         ))}
