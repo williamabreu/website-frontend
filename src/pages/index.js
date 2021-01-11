@@ -3,6 +3,7 @@ import { Row, Col, Container, ListGroup } from "react-bootstrap"
 import { FaGithub, FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa"
 
 import { BusinessCard, Layout, SEO } from "../components"
+import profilePicture from "../images/gatsby-icon.png"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
@@ -14,6 +15,7 @@ const IndexPage = () => (
       <Row>
         <Col>
           <BusinessCard
+            avatar={profilePicture}
             name="William Abreu"
             description="Software Developer"
             socialNetworks={[

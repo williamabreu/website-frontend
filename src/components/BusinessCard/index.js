@@ -1,8 +1,20 @@
 import React from "react"
-import { Button, ButtonGroup, Col, Container, Row } from "react-bootstrap"
+import { Button, ButtonGroup, Col, Container, Row, Image } from "react-bootstrap"
 
 const BusinessCard = (props) => (
   <Container className="business-card p-5 my-5">
+    {props.avatar &&
+      <Row>
+        <Col>
+          <Image
+            style={{ height: "150px", marginBottom: "20px" }}
+            src={props.avatar}
+            roundedCircle
+          />
+        </Col>
+      </Row>
+    }
+
     <Row>
       <Col>
         <h1>{props.name}</h1>
