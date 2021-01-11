@@ -37,7 +37,7 @@ const Layout = ({ children }) => (
             <Col className="footer-col">
               <footer>
                 <span>
-                  Developed by {" "} <a href="https://www.williamabreu.net">williamabreu.net</a>
+                  Developed by <a href="https://www.williamabreu.net">williamabreu.net</a>
                 </span>
               </footer>
             </Col>
