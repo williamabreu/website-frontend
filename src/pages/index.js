@@ -1,9 +1,9 @@
 import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 import { FaGithub, FaYoutube, FaLinkedin, FaInstagram } from "react-icons/fa"
 
 import { BusinessCard, Layout, SEO } from "../components"
-import profilePicture from "../images/gatsby-icon.png"
+import profilePicture from "../images/favicon.png"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
