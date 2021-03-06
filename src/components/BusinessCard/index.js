@@ -1,5 +1,7 @@
 import React from "react"
 import { Button, ButtonGroup, Col, Container, Row, Image } from "react-bootstrap"
+import Tooltip from "react-bootstrap/Tooltip"
+import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 
 const BusinessCard = (props) => (
   <Container className="business-card p-5 my-5">
@@ -30,9 +32,19 @@ const BusinessCard = (props) => (
     {props.socialNetworks &&
       <ButtonGroup>
         {props.socialNetworks.map(item => (
-          <Button variant="outline-dark" href={item.link} target="_blank" >
-            {item.icon}
-          </Button>
+          <OverlayTrigger
+            placement="bottom"
+            delay={{ show: 250, hide: 200 }}
+            overlay={
+              <Tooltip>
+                {item.name}
+              </Tooltip>
+            }
+          >
+            <Button variant="outline-dark" href={item.link} target="_blank" >
+              {item.icon}
+            </Button>
+          </OverlayTrigger>
         ))}
       </ButtonGroup>
     }
