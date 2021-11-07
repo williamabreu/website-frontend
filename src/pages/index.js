@@ -20,9 +20,9 @@ const IndexPage = () => (
             description="Software Engineer"
             socialNetworks={[
               { name: "GitHub",    icon: <FaGithub/>,    link: "https://github.com/williamabreu" },
-              { name: "LinkedIn",  icon: <FaLinkedin/>,  link: "https://linkedin.com/in/williamsantosabreu" },
+              { name: "LinkedIn",  icon: <FaLinkedin/>,  link: "https://linkedin.com/in/williamabreu96" },
               { name: "YouTube",   icon: <FaYoutube/>,   link: "https://youtube.com/williamabreu" },
-              { name: "Instagram", icon: <FaInstagram/>, link: "https://instagram.com/williamsantosabreu" },
+              { name: "Instagram", icon: <FaInstagram/>, link: "https://instagram.com/williamabreu96" },
             ]}
           />
         </Col>
