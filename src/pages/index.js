@@ -9,7 +9,16 @@ const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO
       title="Home"
-      keywords={[`william`, `abreu`, `software`, `developer`]}
+      keywords={[
+        `william`,
+        `abreu`,
+        `software`,
+        `developer`,
+        `engineer`,
+        `backend`,
+        `python`,
+        `node`,
+      ]}
     />
     <Container className="text-center">
       <Row>
@@ -17,7 +26,7 @@ const IndexPage = () => (
           <BusinessCard
             avatar={profilePicture}
             name="William Abreu"
-            description="Software Engineer"
+            description="Senior Software Engineer"
             socialNetworks={[
               { name: "GitHub",    icon: <FaGithub/>,    link: "https://github.com/williamabreu" },
               { name: "LinkedIn",  icon: <FaLinkedin/>,  link: "https://linkedin.com/in/williamabreu96" },

@@ -4,7 +4,7 @@ import Tooltip from "react-bootstrap/Tooltip"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 
 const BusinessCard = (props) => (
-  <Container className="business-card p-5 my-5">
+  <Container className="business-card px-4 py-5">
     {props.avatar &&
       <Row>
         <Col>

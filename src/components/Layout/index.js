@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
         <Container fluid className="px-0 main d-flex align-items-center justify-content-center">
           <Row noGutters>
             <Col>
-              <Container className="mt-5">
+              <Container>
                 <main>{children}</main>
               </Container>
             </Col>
