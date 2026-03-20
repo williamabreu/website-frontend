@@ -26,7 +26,7 @@ const IndexPage = () => (
           <BusinessCard
             avatar={profilePicture}
             name="William Abreu"
-            description="Sr. Software Engineer"
+            description="Senior Software Engineer"
             socialNetworks={[
               { name: "LinkedIn", icon: <FaLinkedin className="mb-1"/>, link: "https://linkedin.com/in/williamabreu96" },
             ]}
